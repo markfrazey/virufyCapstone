@@ -14,7 +14,6 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { ThemeOptions } from '@mui/material/styles';
 
 function Copyright() {
   return (
@@ -67,63 +66,27 @@ export default function Album() {
           }}
         >
           <Container maxWidth="sm">
-            <Typography
-              component="h1"
-              variant="h2"
-              align="center"
-              color="text.primary"
-              gutterBottom
-            >
+            <Typography component="h1" variant="h2" align="center" color="text.primary" gutterBottom>
               Virufy Cough Annotator
             </Typography>
-            <Typography variant="h5" align="center" color="text.secondary" paragraph>
-              testy testy
+            <Typography variant="p" align="center" color="text.secondary" paragraph>
+              Abiy Abahoy, Augene Pak, Carson Essabhoy, Mark Frazey, Nora Casey
             </Typography>
-            <Stack
-              sx={{ pt: 4 }}
-              direction="row"
-              spacing={2}
-              justifyContent="center"
-            >
-              <Button variant="contained">cool button 1</Button>
-              <Button variant="outlined">cool button 2</Button>
-            </Stack>
+          </Container>
+          <Container maxWidth="md">
+            <Typography variant="h4" gutterBottom>
+              Background
+            </Typography>
+            <Typography variant="body1" gutterBottom>
+              Virufy is a <Box display="inline" sx={{ fontWeight: 'bold' }}>non-profit research organization</Box> developing AI technology to rapidly screen for COVID-19 from cough patterns through the use of a smartphone application at <Box display="inline" sx={{ fontWeight: 'bold' }}>no cost</Box>.
+            </Typography>
+            <Typography variant="body1" gutterBottom>
+              Virufy aims to offer <Box display="inline" sx={{ fontWeight: 'bold' }}>COVID-19 pre-screening</Box> for patients, clinicians, and governments, especially in low-income countries. Virufy aspires to be the leading non-profit organization for technology-enabled disease identification, transforming global healthcare, and inspiring others to support and invest in this mission.
+            </Typography>
           </Container>
         </Box>
         <Container sx={{ py: 8 }} maxWidth="md">
-          {/* End hero unit */}
-          <Grid container spacing={4}>
-            {cards.map((card) => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
-                <Card
-                  sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
-                >
-                  <CardMedia
-                    component="img"
-                    sx={{
-                      // 16:9
-                      pt: '56.25%',
-                    }}
-                    image="https://source.unsplash.com/random"
-                    alt="random"
-                  />
-                  <CardContent sx={{ flexGrow: 1 }}>
-                    <Typography gutterBottom variant="h5" component="h2">
-                      Heading
-                    </Typography>
-                    <Typography>
-                      This is a media card. You can use this section to describe the
-                      content.
-                    </Typography>
-                  </CardContent>
-                  <CardActions>
-                    <Button size="small">View</Button>
-                    <Button size="small">Edit</Button>
-                  </CardActions>
-                </Card>
-              </Grid>
-            ))}
-          </Grid>
+          <Typography>testy testy</Typography>
         </Container>
       </main>
       {/* Footer */}
