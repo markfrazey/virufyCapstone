@@ -57,14 +57,7 @@ export default function Album() {
         </Toolbar>
       </AppBar>
       <main>
-        {/* Hero unit */}
-        <Box
-          sx={{
-            bgcolor: 'background.paper',
-            pt: 8,
-            pb: 6,
-          }}
-        >
+        <Box sx={{ bgcolor: 'background.paper', pt: 8, pb: 6, }}>
           <Container maxWidth="sm">
             <Typography component="h1" variant="h2" align="center" color="text.primary" gutterBottom>
               Virufy Cough Annotator
@@ -77,11 +70,19 @@ export default function Album() {
             <Typography variant="h4" gutterBottom>
               Background
             </Typography>
-            <Typography variant="body1" gutterBottom>
+            <Typography variant="body1" gutterBottom paragraph>
               Virufy is a <Box display="inline" sx={{ fontWeight: 'bold' }}>non-profit research organization</Box> developing AI technology to rapidly screen for COVID-19 from cough patterns through the use of a smartphone application at <Box display="inline" sx={{ fontWeight: 'bold' }}>no cost</Box>.
             </Typography>
-            <Typography variant="body1" gutterBottom>
+            <Typography variant="body1" gutterBottom paragraph>
               Virufy aims to offer <Box display="inline" sx={{ fontWeight: 'bold' }}>COVID-19 pre-screening</Box> for patients, clinicians, and governments, especially in low-income countries. Virufy aspires to be the leading non-profit organization for technology-enabled disease identification, transforming global healthcare, and inspiring others to support and invest in this mission.
+            </Typography>
+          </Container>
+          <Container maxWidth="md">
+            <Typography variant="h4" gutterBottom>
+              Project Description
+            </Typography>
+            <Typography variant="body1" gutterBottom paragraph>
+              Our project is an annotation tool used for the cough sample dataset utilized for the AI model. The project is a React application that largely utilizes <Link href="https://labelstud.io/" target="_blank">Label Studio</Link>.
             </Typography>
           </Container>
         </Box>
