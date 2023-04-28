@@ -14,6 +14,7 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import TimelineImage from './timeline.png';
 
 function Copyright() {
   return (
@@ -85,6 +86,16 @@ export default function Album() {
               Our project is an annotation tool used for the cough sample dataset utilized for the AI model. The project is a React application that largely utilizes <Link href="https://labelstud.io/" target="_blank">Label Studio</Link>.
             </Typography>
           </Container>
+        </Box>
+        <Box sx={{ bgcolor: 'background.paper', pt: 8, pb: 6, }}>
+          <Card sx={{ maxWidth: 640 }}>
+            <CardMedia component="img" image={TimelineImage} title="timeline"/>
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="div">
+                Timeline
+              </Typography>
+            </CardContent>
+          </Card>
         </Box>
         <Container sx={{ py: 8 }} maxWidth="md">
           <Typography>testy testy</Typography>
