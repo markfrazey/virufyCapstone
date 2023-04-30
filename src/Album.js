@@ -15,6 +15,7 @@ import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import TimelineImage from './timeline.png';
+import TimelineVideo from './videos/Timeline Selection Animation.mp4'
 
 function Copyright() {
   return (
@@ -87,9 +88,9 @@ export default function Album() {
             </Typography>
           </Container>
         </Box>
-        <Box sx={{ bgcolor: 'background.paper', pt: 8, pb: 6, }}>
-          <Card sx={{ maxWidth: 640 }}>
-            <CardMedia component="img" image={TimelineImage} title="timeline"/>
+        <Box sx={{ bgcolor: 'background.paper', pt: 8, pb: 6, }} align="center">
+          <Card sx={{ maxWidth: 860 }}>
+            <CardMedia component="video" image={TimelineVideo} title="timeline" muted loop autoPlay/>
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
                 Timeline
