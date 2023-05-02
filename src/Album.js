@@ -1,21 +1,15 @@
 import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import CssBaseline from '@mui/material/CssBaseline';
-import Grid from '@mui/material/Grid';
-import Stack from '@mui/material/Stack';
 import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import TimelineImage from './timeline.png';
 import TimelineVideo from './videos/Timeline Selection Animation.mp4'
+import Navbar from './components/Navbar';
 
 function Copyright() {
   return (
@@ -29,8 +23,6 @@ function Copyright() {
     </Typography>
   );
 }
-
-const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 const theme = createTheme({
   palette: {
@@ -51,13 +43,7 @@ export default function Album() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <AppBar position="relative">
-        <Toolbar>
-          <Typography variant="h6" color="inherit" noWrap>
-            Virufy Cough Annotator
-          </Typography>
-        </Toolbar>
-      </AppBar>
+      <Navbar />
       <main>
         <Box sx={{ bgcolor: 'background.paper', pt: 8, pb: 6, }}>
           <Container maxWidth="sm">
@@ -88,7 +74,7 @@ export default function Album() {
             </Typography>
           </Container>
         </Box>
-        <Box sx={{ bgcolor: 'background.paper', pt: 8, pb: 6, }} align="center">
+        <Box sx={{ bgcolor: 'background.paper', pt: 8, pb: 6, }} align="center" id="features">
           <Card sx={{ maxWidth: 860 }}>
             <CardMedia component="video" image={TimelineVideo} title="timeline" muted loop autoPlay/>
             <CardContent>
