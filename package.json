@@ -1,7 +1,7 @@
 {
   "name": "ischool-capstone",
   "version": "0.1.0",
-  "homepage": "https://ncasey2218.github.io/virufyCapstone/",
+  "homepage": "https://markfrazey.github.io/virufyCapstone/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.6",
