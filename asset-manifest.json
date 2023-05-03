@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/virufyCapstone/static/css/main.a0875ecc.css",
+    "main.js": "/virufyCapstone/static/js/main.04d77489.js",
+    "static/media/Timeline Selection Animation.mp4": "/virufyCapstone/static/media/Timeline Selection Animation.8cdf334c151bda2869f8.mp4",
+    "index.html": "/virufyCapstone/index.html",
+    "main.a0875ecc.css.map": "/virufyCapstone/static/css/main.a0875ecc.css.map",
+    "main.04d77489.js.map": "/virufyCapstone/static/js/main.04d77489.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a0875ecc.css",
+    "static/js/main.04d77489.js"
+  ]
+}
