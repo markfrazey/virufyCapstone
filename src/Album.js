@@ -1,16 +1,15 @@
 import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import TimelineVideo from './videos/Timeline Selection Animation.mp4'
+import Navbar from './components/Navbar';
 
 function Copyright() {
   return (
@@ -39,13 +38,7 @@ export default function Album() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <AppBar position="relative">
-        <Toolbar>
-          <Typography variant="h6" color="inherit" noWrap>
-            Virufy Cough Annotator
-          </Typography>
-        </Toolbar>
-      </AppBar>
+      <Navbar />
       <main>
         <Box sx={{ bgcolor: 'background.paper', pt: 8, pb: 6}}>
           <Container maxWidth="sm">
@@ -79,7 +72,7 @@ export default function Album() {
             </Typography>
           </Container>
         </Box>
-        <Box sx={{ bgcolor: 'background.paper', pt: 8, pb: 6, }} align="center">
+        <Box sx={{ bgcolor: 'background.paper', pt: 8, pb: 6, }} align="center" id="features">
           <Card sx={{ maxWidth: 860 }}>
             <CardMedia component="video" image={TimelineVideo} title="timeline" muted loop autoPlay/>
             <CardContent>
