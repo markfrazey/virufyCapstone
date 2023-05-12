@@ -64,13 +64,13 @@ export default function Album() {
               Overview
             </Typography>
             <Typography variant="body1" gutterBottom paragraph>
-              Virufy is a <Box display="inline" sx={{ fontWeight: 'bold' }}>non-profit research organization</Box> developing AI technology to rapidly screen for COVID-19 from cough patterns through the use of a smartphone application at <Box display="inline" sx={{ fontWeight: 'bold' }}>no cost</Box>.
+              Low-income populations often have limited access to COVID-19 testing opportunities. This inspired <Box display="inline" sx={{ fontWeight: 'bold' }}>Virufy</Box>, a non-profit organization, to develop a mobile-based solution that utilizes an artificial intelligence (AI) model to <Box display="inline" sx={{ fontWeight: 'bold' }}>rapidly diagnose COVID-19</Box> through a cough recording.
             </Typography>
             <Typography variant="body1" gutterBottom paragraph>
-              Virufy aims to offer <Box display="inline" sx={{ fontWeight: 'bold' }}>COVID-19 pre-screening</Box> for patients, clinicians, and governments, especially in low-income countries. Virufy aspires to be the leading non-profit organization for technology-enabled disease identification, transforming global healthcare, and inspiring others to support and invest in this mission.
+              To properly train this model, Virufy needs a large database of annotated cough recordings; however, the current method of annotating data is outdated and disorganized.
             </Typography>
             <Typography variant="body1" gutterBottom paragraph>
-              Our project is an annotation tool used for the cough sample dataset utilized for the AI model. The project is a React application that largely utilizes <Link href="https://labelstud.io/" target="_blank">Label Studio</Link>.
+              To streamline their annotating process, we developed a <Box display="inline" sx={{ fontWeight: 'bold' }}>web-based audio-annotating tool</Box> that heavily utilizes the open-source library <Link href="https://labelstud.io/" target="_blank">Label Studio</Link>, which will enable the crowdsourcing of audio annotations on the cough samples and support Virufy in improving their AI model.
             </Typography>
           </Container>
         </Box>
