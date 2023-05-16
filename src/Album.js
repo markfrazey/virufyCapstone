@@ -4,6 +4,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
+import { Button } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
@@ -75,6 +76,7 @@ export default function Album() {
           </Container>
         </Box>
         <Box sx={{ pt: 4 }} id="features">
+      
           <Container maxWidth="md">
             <Typography variant="h3" gutterBottom>
               Features
@@ -106,8 +108,27 @@ export default function Album() {
                 alt="Sample issues box with options: No cough, Background noise, Talking, Poor mic quality, Too quiet. Sample quality box with options: Good, Bad."
               />
             </Card>
+            <Card sx={{ mb: 4, display: 'flex' }}>
+              <CardContent sx={{ flex: '0 2 auto' }}>
+                <Typography gutterBottom variant="h5" sx={{ fontWeight: 'bold' }}>
+                  Live Website
+                </Typography>
+                <Typography variant="p" component="div" >
+                  Check out the full frontend that lives in a website deployed using AWS Amplify!
+                </Typography>
+                <Typography sx={{ pt: 1 }} variant="p" component="div" color="red">
+                  NOTE: The backend is not fully configured yet; clicking the submit button does not actually send the annotation to the database yet.
+                </Typography>
+                <Box sx={{ pt: 1 }} textAlign='center'>
+                <Button href="https://d3bp69cl3krfbo.cloudfront.net/"
+                    target="_blank"
+                    variant="contained"
+                    align="center">
+            LIVE WEBSITE</Button></Box>
+              </CardContent>
+              
+            </Card>
           </Container>
-
         </Box>
         <Box sx={{ pt: 4 }} id="stakeholders">
           <Container maxWidth="md">
@@ -160,7 +181,7 @@ export default function Album() {
             </Grid>
           </Container>
         </Box>
-
+    
       </main>
       {/* Footer */}
       <Box sx={{ bgcolor: 'background.paper', p: 6 }} component="footer">
