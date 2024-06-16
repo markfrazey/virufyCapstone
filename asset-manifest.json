@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/virufyCapstone/static/css/main.3575befa.css",
-    "main.js": "/virufyCapstone/static/js/main.811cf776.js",
+    "main.css": "/virufyCapstone/static/css/main.f3556740.css",
+    "main.js": "/virufyCapstone/static/js/main.9e188ec8.js",
     "static/media/Timeline Selection Animation.mp4": "/virufyCapstone/static/media/Timeline Selection Animation.8cdf334c151bda2869f8.mp4",
     "static/media/stakeholder1.png": "/virufyCapstone/static/media/stakeholder1.4a2cdf373e4ef445dcfd.png",
     "static/media/stakeholder2.png": "/virufyCapstone/static/media/stakeholder2.ced90b7e178ddb3725af.png",
     "static/media/Sample Details.png": "/virufyCapstone/static/media/Sample Details.f0a1bc690355b94ddd3a.png",
     "static/media/Blobs.png": "/virufyCapstone/static/media/Blobs.0f42dc43bfeb4cceaed4.png",
     "index.html": "/virufyCapstone/index.html",
-    "main.3575befa.css.map": "/virufyCapstone/static/css/main.3575befa.css.map",
-    "main.811cf776.js.map": "/virufyCapstone/static/js/main.811cf776.js.map"
+    "main.f3556740.css.map": "/virufyCapstone/static/css/main.f3556740.css.map",
+    "main.9e188ec8.js.map": "/virufyCapstone/static/js/main.9e188ec8.js.map"
   },
   "entrypoints": [
-    "static/css/main.3575befa.css",
-    "static/js/main.811cf776.js"
+    "static/css/main.f3556740.css",
+    "static/js/main.9e188ec8.js"
   ]
 }
