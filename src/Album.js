@@ -20,7 +20,7 @@ import StakeholderImage2 from './img/stakeholder2.png';
 function Copyright() {
   return (
     <Typography variant="body2" color="text.secondary" align="center">
-      {'Copyright © Abiy Abahoy, Augene Pak, Carson Essabhoy, Mark Frazey, Nora Casey 2023'}
+      {'Copyright © Abiy Abahoy, Augene Pak, Carson Essabhoy, Willow Frazey, Nora Casey 2023'}
     </Typography>
   );
 }
@@ -55,7 +55,7 @@ export default function Album() {
               Team COVID-67
             </Typography>
             <Typography variant="p" align="center" color="white" paragraph>
-              Abiy Abahoy, Augene Pak, Carson Essabhoy, Mark Frazey, Nora Casey
+              Abiy Abahoy, Augene Pak, Carson Essabhoy, Willow Frazey, Nora Casey
             </Typography>
           </Container>
         </Box>
@@ -75,8 +75,17 @@ export default function Album() {
             </Typography>
           </Container>
         </Box>
+        <Box sx={{ pt: 4 }} id="demo">
+          <Container maxWidth="md">
+            <Typography variant="h3" gutterBottom>
+              Demo
+            </Typography>
+            <div className='videoWrapper'>
+              <iframe src="https://www.youtube-nocookie.com/embed/rmS8tXf0Z8M?modestbranding=1&rel=0" width="560" height="315" title="COVID-67 Cough Annotator Presentation" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </Container>
+        </Box>
         <Box sx={{ pt: 4 }} id="features">
-      
           <Container maxWidth="md">
             <Typography variant="h3" gutterBottom>
               Features
@@ -126,7 +135,7 @@ export default function Album() {
                     align="center">
             LIVE WEBSITE</Button></Box>
               </CardContent>
-              
+
             </Card>
           </Container>
         </Box>
@@ -181,7 +190,7 @@ export default function Album() {
             </Grid>
           </Container>
         </Box>
-    
+
       </main>
       {/* Footer */}
       <Box sx={{ bgcolor: 'background.paper', p: 6 }} component="footer">
